@@ -1,0 +1,14 @@
+.container {
+
+}
+.wrapper {
+    padding-inline-start: 20px;
+}
+.item {
+    padding-bottom: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
