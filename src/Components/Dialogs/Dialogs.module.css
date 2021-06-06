@@ -1,0 +1,26 @@
+.container {
+
+}
+.Bg {
+    width: 80vw;
+    height: 20vh;
+}
+.wrapper {
+    display: flex;
+}
+.btn {
+    margin-left: 10px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+}
+.dialogGroop {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding-top: 10px;
+}
+.dialogs {
+    padding: 10px;
+}
+.messages {
+    padding: 10px;
+}

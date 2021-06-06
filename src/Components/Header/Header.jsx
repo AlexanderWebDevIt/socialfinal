@@ -5,7 +5,7 @@ import logo from './../../Assets/Img/logo.svg'
 const Header = () => {
     return (
         <div>
-            <img src={logo} className={style.logo} />
+            <img src={logo} alt="logo" className={style.logo} />
             <div className={style.login}>
 
             </div>
