@@ -17,14 +17,17 @@ const Dialogs = () => {
         {message: "loremjfnj okfjvbfj sjvjfvn", id: 4},
         {message: "loremjfnj okfjvbfj sjvjfvn", id: 5},
     ]
-
+    let dialogElement = dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>)
+    let messageElement = messagesData.map(m => <Dialog message={m.message}/>)
     return (
         <div className={style.container}>
             <div className={style.Bgi}></div>
            <div className={style.block}>
-               <DialogItem name={dialogsData[0].name} id = {dialogsData[0].id}/>
-                <Dialog message={messagesData[0].message}/>
+               {dialogElement}
            </div>
+            <div className={style.block}>
+                {messageElement}
+            </div>
         </div>
     );
 };
