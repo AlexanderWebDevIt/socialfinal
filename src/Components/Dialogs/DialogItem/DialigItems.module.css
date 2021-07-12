@@ -1,0 +1,13 @@
+
+
+
+.container {
+    display: flex;
+}
+
+.dialogs {
+    margin-left: 20px;
+}
+.dialogsItems {
+    margin-left: 20px;
+}

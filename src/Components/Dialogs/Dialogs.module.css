@@ -1,9 +1,16 @@
 .container {
 
 }
-.Bg {
+.Bgi {
     width: 80vw;
     height: 20vh;
+    background-image: url("../../Assets/Img/Zakat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.block {
+    display: flex;
 }
 .wrapper {
     display: flex;
