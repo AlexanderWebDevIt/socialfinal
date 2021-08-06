@@ -4,30 +4,31 @@ import DialogItem from "./DialogItem/DialogItem";
 import Dialog from "./Dialog/Dialog";
 
 
-const Dialogs = () => {
-    let dialogsData = [
-        {id:2, name:"Dima"},
-        {id:3, name:"Sasha"},
-        {id:4, name:"Ira"},
-        {id:5, name:"Petr"},
-    ]
-    let messagesData = [
-        {message: "loremjfnj okfjvbfj sjvjfvn", id: 2},
-        {message: "loremjfnj okfjvbfj sjvjfvn", id: 3},
-        {message: "loremjfnj okfjvbfj sjvjfvn", id: 4},
-        {message: "loremjfnj okfjvbfj sjvjfvn", id: 5},
-    ]
-    let dialogElement = dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>)
-    let messageElement = messagesData.map(m => <Dialog message={m.message}/>)
+const Dialogs = (props) => {
+
+    let dialogElement = props.dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>)
+    let messageElement = props.messagesData.map(m => <Dialog message={m.message}/>)
+    let elementDialog = React.createRef();
+    let updateDialogs = () => {
+        let dialog = elementDialog.current.value
+    }
+    let createDialog = () => {
+
+    }
+
+
     return (
         <div className={style.container}>
             <div className={style.Bgi}></div>
-           <div className={style.block}>
-               {dialogElement}
-           </div>
-            <div className={style.block}>
-                {messageElement}
+            <div className={style.wrapper}>
+                <textarea onChange={updateDialogs} className={style.dialogText}/>
+                <button onClick={createDialog} className={style.btn}>add</button>
             </div>
+           <div className={style.block}>
+               <div className={style.dialogs}>{dialogElement}</div>
+               <div className={style.messages}> {messageElement}</div>
+           </div>
+
         </div>
     );
 };

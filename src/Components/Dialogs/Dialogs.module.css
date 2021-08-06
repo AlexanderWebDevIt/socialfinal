@@ -3,7 +3,7 @@
 }
 .Bgi {
     width: 80vw;
-    height: 20vh;
+    height: 30vh;
     background-image: url("../../Assets/Img/Zakat.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,16 +14,15 @@
 }
 .wrapper {
     display: flex;
+    margin-top: 10px;
 }
 .btn {
     margin-left: 10px;
     background-color: dodgerblue;
     border-radius: 5px;
 }
-.dialogGroop {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
-    padding-top: 10px;
+.dialogText {
+    margin-left: 10px;
 }
 .dialogs {
     padding: 10px;

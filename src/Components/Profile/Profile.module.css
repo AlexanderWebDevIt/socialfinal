@@ -1,4 +1,6 @@
 .Bg {
-    width: 80vw;
-    height: 20vh;
+    width: 100%;
+    height: 30vh;
+    background-image: url("../../Assets/Img/_ozero_reka.jpg") ;
+    background-size: cover;
 }
