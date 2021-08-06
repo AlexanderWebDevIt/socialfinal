@@ -11,7 +11,6 @@ import Dialogs from "./Components/Dialogs/Dialogs";
 
 const App = (props) => {
 
-
   return (
       <div className="wrapper">
         <div className="Header" >
@@ -21,8 +20,14 @@ const App = (props) => {
             <Navbar/>
         </div>
         <div className="Container" >
-            <Route path='/profile/:userId?' render={ () => <Profile state={props.state.postData} addPost={props.addPost} />}/>
-            <Route path='/dialogs' render={ () => <Dialogs dialogsData={props.state.dialogsData} messagesData={props.state.messagesData} />}/>
+            <Route path='/profile/:userId?' render={ () => <Profile
+                state={props.state}
+                dispatch={props.dispatch}
+            />}/>
+            <Route path='/dialogs' render={ () => <Dialogs
+                state={props.state}
+                dispatch={props.dispatch}
+            />}/>
         </div>
       </div>
   );
